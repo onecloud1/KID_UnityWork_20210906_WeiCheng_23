@@ -5,16 +5,15 @@ public class NPC : MonoBehaviour
 
 ///</summary>
 {
-    public int itemMoney = 100;
-    public int missionNumber;
-    public int getMissionItemNumber = 1;
+    private int missionNumber;   
 
     /// <summary>
     /// 對話內容
     /// </summary>
-    private void content()
+    /// <param name="content">NPC要說的對話內容</param>
+    private void content(string content)
     {
-        print("對話內容");
+        
     }
     /// <summary>
     /// 開否啟商店
@@ -27,11 +26,11 @@ public class NPC : MonoBehaviour
     /// <summary>
     /// 購買道具
     /// </summary>
-    /// <param name="itemMoney">道具預設價格100</param>
+    /// <param name="price">道具預設價格100</param>
     /// <returns>傳回0</returns>
-    public int buyItem(int itemMoney)
+    public int buyItem(int price = 100)
     {
-        return int 0;
+        return 0;
     }
     /// <summary>
     /// 取得任務
@@ -39,14 +38,14 @@ public class NPC : MonoBehaviour
     /// <param name="missionNumber">任務編號</param>
     public void getMission(int missionNumber)
     {
-        print("取得任務")
+        
     }
     /// <summary>
     /// 任務更新
     /// </summary>
     /// <param name="getMissionItemNumber">獲得任務道具為1</param>
     /// <returns>傳回0</returns>
-    private int missionUpdate(int getMissionItemNumber)
+    private int missionUpdate(int getMissionItemNumber = 1 )
     {
         return 0;
     }
